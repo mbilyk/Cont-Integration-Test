@@ -14,7 +14,6 @@
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="main.vi" Type="VI" URL="../main.vi"/>
 		<Item Name="TestMain.vi" Type="VI" URL="../TestMain.vi"/>
-		<Item Name="VIDef.ctl" Type="VI" URL="../VIDef.ctl"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
