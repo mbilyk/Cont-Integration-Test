@@ -19,3 +19,6 @@ This looks like a good guide:
 https://resources.github.com/whitepapers/practical-guide-to-CI-with-Jenkins-and-GitHub/
 
 
+
+Had to install Git on the VM containing Jenkins and use this page to https://stackoverflow.com/questions/8639501/jenkins-could-not-run-git point to git.exe (java.io.IOException: Cannot run program "git.exe" (in directory "C:\Users\OpalRTDev\.jenkins\workspace\JenkinsExample_master"): CreateProcess error=2, The system cannot find the file specified
+)
