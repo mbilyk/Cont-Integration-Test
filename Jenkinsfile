@@ -1,4 +1,3 @@
-#!/usr/bin/env groovy
 pipeline {
     agent { label 'master' }
     stages {
