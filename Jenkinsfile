@@ -7,7 +7,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-            }
+				bat 'script'{
+					"C:\Program Files (x86)\National Instruments\Shared\LabVIEW CLI\LabVIEWCLI.exe" -OperationName ExecuteBuildSpec -ProjectPath C:\Users\OpalRTDev\.jenkins\workspace\C:\Users\OpalRTDev\.jenkins\workspace\JenkinsExample_master\CITestBed.lvproj -TargetName "My Computer" -BuildSpecName My_Application
+					}
+				}
         }
         stage('Test') {
             steps {
