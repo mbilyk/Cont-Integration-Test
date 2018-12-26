@@ -1,10 +1,23 @@
+#!/usr/bin/env groovy
+
 pipeline {
-    agent { label 'master' }
+    agent any
+
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-                echo 'test'
+                echo 'Building..'
             }
-          }
         }
-      }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+    }
+}
