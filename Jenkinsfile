@@ -13,7 +13,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-				bat 'LabVIEWCLI.exe -OperationName RunVI -VIPath %WORKSPACE%\\TestMain.vi main.vi
+				bat 'LabVIEWCLI.exe -OperationName RunVI -VIPath %WORKSPACE%\\TestMain.vi main.vi'
             }
         }
         stage('Deploy') {
