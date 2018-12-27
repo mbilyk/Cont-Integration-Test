@@ -7,7 +7,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-				bat 'echo %PATH%'
 				bat 'LabVIEWCLI.exe -OperationName ExecuteBuildSpec -ProjectPath %WORKSPACE%\\CITestBed.lvproj -TargetName "My Computer" -BuildSpecName My_Application'
 				}
         }
