@@ -6,18 +6,18 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building...'
 				bat 'LabVIEWCLI.exe -OperationName ExecuteBuildSpec -ProjectPath %WORKSPACE%\\CITestBed.lvproj -TargetName "My Computer" -BuildSpecName My_Application'
 				}
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing...'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying...'
             }
         }
     }
